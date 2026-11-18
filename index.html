@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>Nunaui</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #111;
+            color: #eee;
+            font-family: system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 24px 8%;
+            border-bottom: 1px solid #292929;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: #999;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px 12%;
+        }
+
+        .tag {
+            color: #888;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 88px);
+            line-height: 1.05;
+            letter-spacing: -5px;
+            max-width: 850px;
+            margin: 0;
+        }
+
+        h1 span {
+            color: #777;
+        }
+
+        .description {
+            color: #999;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 520px;
+            margin-top: 30px;
+        }
+
+        .links {
+            display: flex;
+            gap: 14px;
+            margin-top: 36px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 13px 22px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: #eee;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .button.primary {
+            background: #eee;
+            color: #111;
+            border-color: #eee;
+        }
+
+        .button:hover {
+            background: #333;
+            color: white;
+        }
+
+        .button.primary:hover {
+            background: #ccc;
+            color: #111;
+        }
+
+        footer {
+            padding: 25px 8%;
+            border-top: 1px solid #292929;
+            color: #666;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px 6%;
+            }
+
+            nav a {
+                margin-left: 12px;
+            }
+
+            main {
+                padding: 80px 7%;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nunaui</div>
+        <nav>
+            <a href="https://github.com/Nunaui">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tag">Indie dev team</div>
+
+        <h1>
+            Nunaui.<br>
+            <span>Secondary grey text that looks cool.</span>
+        </h1>
+
+        <p class="description">
+            An independent development organization focused on
+            creating software, experimenting with ideas, and
+            building interesting things.
+        </p>
+
+        <div class="links">
+            <a class="button primary"
+               href="https://github.com/Nunaui">
+                Explore projects
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <span>Footer text.</span>
+    </footer>
+
+</body>
+</html>
